@@ -15,5 +15,5 @@ public class Forum {
     protected int topicCount;
     protected String url;
     protected int viewingCount;
-    
+
 }

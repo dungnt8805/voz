@@ -13,8 +13,16 @@
     tools:context="me.keeptable.vozforums.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        android:progress="0"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"/>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_above="@id/progressBar"></WebView>
 </RelativeLayout>
